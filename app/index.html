@@ -15,10 +15,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title ng-bind="Page.title()">Ръчно украсени кошници, бутилки, чаши и детски столчета</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Подарете си ръчно украсени бутилки, чаши и камъни с технката декупаж. Дизайнерски детски столчета. Стилни и елегантни сватбени бутилки и кошници."
-  />
+  <meta name="description" content="Подарете си ръчно украсени бутилки, чаши и камъни с технката декупаж. Дизайнерски детски столчета. Стилни и елегантни сватбени бутилки и кошници."/>
   <meta name="keywords" content="декупаж, ръчно изработено, hand made, сватбени бутилки, сватбени кошници" />
-  <meta name="author" content="Yavor Komitov" />
+  <meta name="author" content="Rozalina Georgieva" />
 
   <!-- Facebook and Twitter integration -->
   <meta property="og:title" content="" />
@@ -139,15 +138,23 @@
           <div class="container">
             <div class="row copy-right">
               <div class="col-md-6 col-md-offset-3 text-center">
-                <p class="fh5co-social-icons">
+                <!--<p class="fh5co-social-icons">
                   <a href="#"><i class="icon-twitter2"></i></a>
-                  <a href="#"><i class="icon-facebook2"></i></a>
+                  <a 
+                  socialshare 
+                  socialshare-provider="facebook" 
+                  socialshare-via="217179975399213" 
+                  socialshare-type="feed" 
+                  socialshare-description="RozLiArt.com - Ръчно украсени кошници, бутилки, чаши и детски столчета. Декупаж и дребни подаръци."
+                  socialshare-url="https://www.rozliart.com"
+                  socialshare-media="https://rozliart.com/images/s_decoupage_1.jpg"
+                  href="#"><i class="icon-facebook2"></i></a>
                   <a href="#"><i class="icon-instagram"></i></a>
                   <a href="#"><i class="icon-dribbble2"></i></a>
                   <a href="#"><i class="icon-youtube"></i></a>
-                </p>
+                </p>-->
 
-                <p>&copy; 2016 RozLi Art<br/>Web design by <a href="#">YZK Dev</a></p>
+                <p>&copy; {{$root.texts.year}} RozLi Art<br/>Web development by <a href="https://bg.linkedin.com/in/yavork">YZK Dev</a></p>
               </div>
             </div>
           </div>
@@ -239,6 +246,9 @@
 
   <!-- Angular Directives -->
   <!--<script type="text/javascript" src="js/flexslider.js"></script>-->
+
+  <!-- Angular Socialshare -->
+  <script type="text/javascript" src="js/angular-socialshare.min.js"></script>
 
   <script type="text/javascript" src="js/jquery.ez-plus.js"></script>
 </body>

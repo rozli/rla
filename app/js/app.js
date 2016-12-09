@@ -184,7 +184,7 @@
                 }
             };
         });
-    angular.module('rozLi', ['ngRoute', 'rozLi.controllers'])
+    angular.module('rozLi', ['ngRoute', 'rozLi.controllers', '720kb.socialshare'])
         .config(['$routeProvider', '$locationProvider', config])
         .run(runFunction)
         .constant('baseServiceUrl', 'http://localhost:53249');

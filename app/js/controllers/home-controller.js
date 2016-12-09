@@ -5,6 +5,7 @@
         var vm = this;
 
         $rootScope.texts = {
+            year: new Date().getFullYear(),
             email: "rozliart@gmail.com",
             details: "Детайли",
             material: "Материал",
