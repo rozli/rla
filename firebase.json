@@ -1,0 +1,158 @@
+{
+  "hosting": {
+    "public": "public",
+    "redirects": [
+      {
+        "source": "/contact",
+        "destination": "/#/contact",
+        "type": 301
+      },
+      {
+        "source": "/children",
+        "destination": "/#/children",
+        "type": 301
+      },
+      {
+        "source": "/children/pipona",
+        "destination": "/#/children/pipona",
+        "type": 301
+      },
+      {
+        "source": "/children/poli",
+        "destination": "/#/children/poli",
+        "type": 301
+      },
+      {
+        "source": "/children/cowboy",
+        "destination": "/#/children/cowboy",
+        "type": 301
+      },
+      {
+        "source": "/children/gabarkovci",
+        "destination": "/#/children/gabarkovci",
+        "type": 301
+      },
+      {
+        "source": "/children/dino",
+        "destination": "/#/children/dino",
+        "type": 301
+      },
+      {
+        "source": "/children/zaio",
+        "destination": "/#/children/zaio",
+        "type": 301
+      },
+      {
+        "source": "/children/ruby",
+        "destination": "/#/children/ruby",
+        "type": 301
+      },
+      {
+        "source": "/children/pirate",
+        "destination": "/#/children/pirate",
+        "type": 301
+      },
+      {
+        "source": "/decoupage",
+        "destination": "/#/decoupage",
+        "type": 301
+      },
+      {
+        "source": "/decoupage/bottles",
+        "destination": "/#/decoupage/bottles",
+        "type": 301
+      },
+      {
+        "source": "/decoupage/bottles/bike",
+        "destination": "/#/decoupage/bottles/bike",
+        "type": 301
+      },
+      {
+        "source": "/decoupage/bottles/lighthouse",
+        "destination": "/#/decoupage/bottles/lighthouse",
+        "type": 301
+      },
+      {
+        "source": "/decoupage/bottles/forest",
+        "destination": "/#/decoupage/bottles/forest",
+        "type": 301
+      },
+      {
+        "source": "/decoupage/cups",
+        "destination": "/#/decoupage/cups",
+        "type": 301
+      },
+      {
+        "source": "/decoupage/rocks",
+        "destination": "/#/decoupage/rocks",
+        "type": 301
+      },
+      {
+        "source": "/decoupage/rocks/kamen",
+        "destination": "/#/decoupage/rocks/kamen",
+        "type": 301
+      },
+      {
+        "source": "/decoupage/rocks/boat",
+        "destination": "/#/decoupage/rocks/boat",
+        "type": 301
+      },
+      {
+        "source": "/weddings",
+        "destination": "/#/weddings",
+        "type": 301
+      },
+      {
+        "source": "/weddings/champagne",
+        "destination": "/#/weddings/champagne",
+        "type": 301
+      },
+      {
+        "source": "/weddings/champagne/magic",
+        "destination": "/#/weddings/champagne/magic",
+        "type": 301
+      },
+      {
+        "source": "/weddings/baskets",
+        "destination": "/#/weddings/baskets",
+        "type": 301
+      },
+      {
+        "source": "/handmade",
+        "destination": "/#/handmade",
+        "type": 301
+      },
+      {
+        "source": "/handmade/tapestry",
+        "destination": "/#/handmade/tapestry",
+        "type": 301
+      },
+      {
+        "source": "/handmade/antfarms",
+        "destination": "/#/handmade/antfarms",
+        "type": 301
+      }
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=604800"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(js|css|html)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=604800"
+          }
+        ]
+      }
+    ],
+    "cleanUrls": true
+  }
+}

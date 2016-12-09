@@ -1,0 +1,89 @@
+<aside id="fh5co-hero" class="js-fullheight">
+  <div class="flexslider js-fullheight">
+    <ul class="slides">
+      <rl-slider info="cSlider"></rl-slider>
+    </ul>
+  </div>
+</aside>
+<div id="fh5co-contact-section">
+  <div class="container">
+    <p>
+      &emsp;&emsp;&emsp;Поръчка може да направите на този сайт или на фейсбук страницата на RozLi Art, като запишете име на артикула
+      и оставите Вашето име, телефон и адрес за доставката.
+    </p>
+    <p>&emsp;&emsp;&emsp;Доставката се извършва с куриерска фирма Еконт до желан от Вас адрес или офис на куриерската фирма.
+      Възможно е лично предаване на територията на София-град. Срокът на доставка за вече изработени и потвърдени в наличност
+      продукти е до 5 дни от датата на приемането на поръчката. <strong>Клиентът заплаща куриерските разходи по доставката.</strong>
+    </p>
+    <p>
+      * Забележка: По поръчка се изработват само кошници, сватбено шампанско и мравеферми по предоставените в сайта модели. В тези
+      случаи доставката зависи от времето за изработка и се уточнява допълнително.
+    </p>
+    <h1>Формуляр за поръчка</h1>
+    <form name="requestForm" ng-submit="submitForm()" novalidate>
+      <div class="row">
+        <div class="col-md-6 col-md-push-6">
+          <h3 class="section-title">За контакт с мен:</h3>
+          <ul class="contact-info">
+            <li><i class="icon-phone2"></i>0883 309 675</li>
+            <li><i class="icon-mail"></i>{{$root.texts.email}}</li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-md-pull-6">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group" ng-class="{'has-error':requestForm.name.$invalid && requestForm.name.$dirty}">
+                <input type="text" class="form-control" placeholder="Вашето име" name="name" ng-model="name" required>
+                <span ng-show="submitted && requestForm.name.$invalid" class="text-danger">Въведете вашето име</span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group" ng-class="{'has-error':requestForm.phone.$invalid && requestForm.phone.$dirty}">
+                <input type="text" class="form-control" placeholder="Вашият телефон" name="phone" ng-model="phone" required>
+                <span ng-show="submitted && requestForm.phone.$invalid" class="text-danger">Въведете вашият телефон</span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group" ng-class="{'has-error':requestForm.email.$invalid && requestForm.email.$dirty}">
+                <input type="email" class="form-control" placeholder="Вашият Email" name="email" ng-model="email" required>
+                <span ng-show="submitted && requestForm.email.$invalid" class="text-danger">Въведете валиден email</span>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group" ng-class="{'has-error':requestForm.product.$invalid && requestForm.product.$dirty}">
+                <input type="text" class="form-control" placeholder="Име на артикул" name="product" ng-model="product" required>
+                <span ng-show="submitted && requestForm.product.$invalid" class="text-danger">Въведете Продукт</span>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group" ng-class="{'has-error':requestForm.address.$invalid && requestForm.address.$dirty}">
+                <input type="text" class="form-control" placeholder="Адрес на доставка" name="address" ng-model="address" required>
+                <span ng-show="submitted && requestForm.address.$invalid" class="text-danger">Въведете адрес за доставка</span>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <textarea class="form-control" id="" cols="30" rows="7" name="message" ng-model="message" placeholder="Съобщение"></textarea>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <button type="submit" ng-click="submitted=true" ng-disabled="requestForm.submitDisabled" class="btn btn-primary">Изпрати</button>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div ng-show="emailSent" class="alert alert-dismissible alert-success">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <p>Съобщението е изпратено! Благодаря Ви!</p>
+              </div>
+              <div ng-show="emailSentError" class="alert alert-dismissible alert-danger">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <p>Възникна проблем при изпращане на съобщението. Моля, опитайте отново или се обадете на телефона за контакт, за да направите поръчка!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

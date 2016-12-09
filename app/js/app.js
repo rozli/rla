@@ -1,0 +1,204 @@
+(function () {
+    'use strict';
+
+    function config($routeProvider, $locationProvider) {
+        var CONTROLLER_AS_VIEW_MODEL = 'vm';
+
+        $routeProvider
+            .when('/', {
+                templateUrl: 'views/partials/home.html',
+                controller: 'HomeController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/contact', {
+                templateUrl: 'views/partials/contact.html',
+                controller: 'ContactController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/children', {
+                templateUrl: '../views/partials/chairs/childChairs.html',
+                controller: 'ChildrenController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/children/pipona', {
+                templateUrl: '../views/partials/chairs/pipona.html',
+                controller: 'PiponaController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/children/poli', {
+                templateUrl: '../views/partials/chairs/poli.html',
+                controller: 'PoliController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/children/cowboy', {
+                templateUrl: '../views/partials/chairs/cowboy.html',
+                controller: 'CowboyController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/children/gabarkovci', {
+                templateUrl: '../views/partials/chairs/gabarkovci.html',
+                controller: 'GabarkovciController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/children/dino', {
+                templateUrl: '../views/partials/chairs/dino.html',
+                controller: 'DinoController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/children/zaio', {
+                templateUrl: '../views/partials/chairs/zaio.html',
+                controller: 'ZaioController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/children/ruby', {
+                templateUrl: '../views/partials/chairs/ruby.html',
+                controller: 'RubyController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/children/pirate', {
+                templateUrl: '../views/partials/chairs/pirate.html',
+                controller: 'PirateController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/handmade', {
+                templateUrl: '../views/partials/handmade/handmadeHome.html',
+                controller: 'HandmadeController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/handmade/tapestry', {
+                templateUrl: '../views/partials/handmade/tapestry.html',
+                controller: 'TapestryController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/handmade/makrame', {
+                templateUrl: '../views/partials/handmade/makrame.html',
+                controller: 'MakrameController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/handmade/antfarms', {
+                templateUrl: '../views/partials/handmade/antfarms.html',
+                controller: 'AntfarmController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/decoupage', {
+                templateUrl: '../views/partials/decoupage/decoupageHome.html',
+                controller: 'DecoupageController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/decoupage/bottles', {
+                templateUrl: '../views/partials/decoupage/decoupageBottles.html',
+                controller: 'BottlesController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/decoupage/bottles/bike', {
+                templateUrl: '../../views/partials/decoupage/bottlesBike.html',
+                controller: 'BikeController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/decoupage/bottles/lighthouse', {
+                templateUrl: '../../views/partials/decoupage/bottlesLighthouse.html',
+                controller: 'LighthouseController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/decoupage/bottles/forest', {
+                templateUrl: '../../views/partials/decoupage/bottlesForest.html',
+                controller: 'ForestController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/decoupage/cups', {
+                templateUrl: '../views/partials/decoupage/decoupageCups.html',
+                controller: 'CupsController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/decoupage/rocks', {
+                templateUrl: '../views/partials/decoupage/decoupageRocks.html',
+                controller: 'RocksController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/decoupage/rocks/kamen', {
+                templateUrl: '../../views/partials/decoupage/rocksKamen.html',
+                controller: 'KamenController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/decoupage/rocks/boat', {
+                templateUrl: '../../views/partials/decoupage/rocksBoat.html',
+                controller: 'BoatController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/weddings', {
+                templateUrl: '../views/partials/weddings/weddingsHome.html',
+                controller: 'WeddingsController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/weddings/baskets', {
+                templateUrl: '../views/partials/weddings/weddingBaskets.html',
+                controller: 'BasketsController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/weddings/champagne', {
+                templateUrl: '../views/partials/weddings/weddingChampagne.html',
+                controller: 'ChampagneController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/weddings/champagne/magic', {
+                templateUrl: '../../views/partials/weddings/champagneMagic.html',
+                controller: 'MagicController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/weddings/champagne/silver', {
+                templateUrl: '../../views/partials/weddings/champagneSilver.html',
+                controller: 'SilverController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/teachme', {
+                templateUrl: '../views/partials/howIsMade.html',
+                controller: 'TeachmeController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .otherwise({ redirectTo: '/' });
+
+        $locationProvider.html5Mode({
+            enabled: true,
+            requireBase: false
+        });
+    }
+
+    angular.module('rozLi.services', []);
+    angular.module('rozLi.controllers', ['rozLi.services'])
+        .directive('cnotFinished', function () {
+            return {
+                restrict: 'A',
+                templateUrl: '../views/partials/chairs/chairNotFinished.html'
+            };
+        })
+        .directive('rlSlider', function () {
+            return {
+                restrict: 'E',
+                replace: true,
+                scope: {
+                    slider: '=info'
+                },
+                templateUrl: '../views/partials/slider.html',
+                link: function () {
+                    rozLiJs.initialize();
+                }
+            };
+        });
+    angular.module('rozLi', ['ngRoute', 'rozLi.controllers'])
+        .config(['$routeProvider', '$locationProvider', config])
+        .run(runFunction)
+        .constant('baseServiceUrl', 'http://localhost:53249');
+
+    // Google Analytics for SPA
+    runFunction.$inject = ['$rootScope', '$location', '$window'];
+    function runFunction($rootScope, $location, $window) {
+        // initialise google analytics
+        $window.ga('create', 'UA-88641929-1', 'auto');
+
+        // track pageview on route change
+        $rootScope.$on('$routeChangeSuccess', function (event) {
+            $window.ga('set', 'page', $location.path());
+            $window.ga('send', 'pageview');
+        });
+    }
+} ());
