@@ -154,7 +154,16 @@
                   <a href="#"><i class="icon-youtube"></i></a>
                 </p>-->
 
-                <p>&copy; {{$root.texts.year}} RozLi Art<br/>Web development by <a href="https://bg.linkedin.com/in/yavork">YZK Dev</a></p>
+                <p> <a ng-show="showFbShare"                    
+                  socialshare 
+                  socialshare-provider="facebook" 
+                  socialshare-via="217179975399213" 
+                  socialshare-type="feed" 
+                  socialshare-description="RozLiArt.com - Ръчно украсени кошници, бутилки, чаши и детски столчета. Декупаж и дребни подаръци."
+                  socialshare-url="https://www.rozliart.com"
+                  socialshare-media="https://rozliart.com/images/s_decoupage_1.jpg"
+                  href="#"><img style="margin: 5px;" width="13%" height="13%" src="../../../images/fb_share.png" alt="Share on FB"></a>
+                         &copy; {{$root.texts.year}} RozLi Art<br/>Web development by <a href="https://bg.linkedin.com/in/yavork">YZK Dev</a></p>
               </div>
             </div>
           </div>
