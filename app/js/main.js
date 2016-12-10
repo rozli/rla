@@ -43,7 +43,7 @@
 
     // Main Menu Superfish
     var mainMenu = function() {
-        $('#fh5co-primary-menu').superfish({
+        $('#rozli-primary-menu').superfish({
             delay: 0,
             animation: {
                 opacity: 'show'
@@ -56,7 +56,7 @@
     };
 
     var sliderMain = function() {
-        $('#fh5co-hero .flexslider').flexslider({
+        $('#rozli-hero .flexslider').flexslider({
             animation: "fade",
             slideshowSpeed: 5000,
             directionNav: true,
@@ -74,16 +74,16 @@
             }
         });
 
-        $('#fh5co-hero .flexslider .slides > li').css('height', $(window).height());
+        $('#rozli-hero .flexslider .slides > li').css('height', $(window).height());
         $(window).resize(function() {
-            $('#fh5co-hero .flexslider .slides > li').css('height', $(window).height());
+            $('#rozli-hero .flexslider .slides > li').css('height', $(window).height());
         });
     };
 
     // Offcanvas and cloning of the main menu
     var offcanvas = function() {
 
-        var $clone = $('#fh5co-menu-wrap').clone();
+        var $clone = $('#rozli-menu-wrap').clone();
 
         $clone.attr({
             'id': 'offcanvas-menu'
@@ -94,15 +94,15 @@
             'id': ''
         });
 
-        $('#fh5co-page').prepend($clone);
+        $('#rozli-page').prepend($clone);
 
         // click the burger
-        $('.js-fh5co-nav-toggle').on('click', function() {
+        $('.js-rozli-nav-toggle').on('click', function() {
 
-            if ($('body').hasClass('fh5co-offcanvas')) {
-                $('body').removeClass('fh5co-offcanvas');
+            if ($('body').hasClass('rozli-offcanvas')) {
+                $('body').removeClass('rozli-offcanvas');
             } else {
-                $('body').addClass('fh5co-offcanvas');
+                $('body').addClass('rozli-offcanvas');
             }
         });
 
@@ -114,8 +114,8 @@
             $('#offcanvas-menu').css('height', w.height());
 
             if (w.width() > 769) {
-                if ($('body').hasClass('fh5co-offcanvas')) {
-                    $('body').removeClass('fh5co-offcanvas');
+                if ($('body').hasClass('rozli-offcanvas')) {
+                    $('body').removeClass('rozli-offcanvas');
                 }
             }
         });
@@ -124,10 +124,10 @@
     // Click outside of the Mobile Menu
     var mobileMenuOutsideClick = function() {
         $(document).click(function(e) {
-            var container = $("#offcanvas-menu, .js-fh5co-nav-toggle");
+            var container = $("#offcanvas-menu, .js-rozli-nav-toggle");
             if (!container.is(e.target) && container.has(e.target).length === 0) {
-                if ($('body').hasClass('fh5co-offcanvas')) {
-                    $('body').removeClass('fh5co-offcanvas');
+                if ($('body').hasClass('rozli-offcanvas')) {
+                    $('body').removeClass('rozli-offcanvas');
                 }
             }
         });

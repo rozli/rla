@@ -21,7 +21,7 @@ $input-border-focus: $brand-primary !default;
 $form-group-margin-bottom: 30px !default;
 
 // Mixin
-@mixin fh5co-translateX($translatex) {
+@mixin rozli-translateX($translatex) {
   -moz-transform: translateX($translatex);
   -webkit-transform: translateX($translatex);
   -ms-transform: translateX($translatex);
@@ -128,7 +128,7 @@ body {
   -ms-user-select: none;
   user-select: none;
 
-  &.fh5co-offcanvas {
+  &.rozli-offcanvas {
     overflow: hidden;
   }
 }
@@ -333,24 +333,24 @@ figure {
 }
 
 //HEADER
-#fh5co-header {
+#rozli-header {
   position: relative;
   margin-bottom: 0;
   z-index: 9999999;
 }
 
-.fh5co-cover,
-.fh5co-hero {
+.rozli-cover,
+.rozli-hero {
   position: relative;
   height: 800px;
   // font-weight: 300;
   @media screen and (max-width: $screen-sm) {
     height: 700px;
   }
-  &.fh5co-hero-2 {
+  &.rozli-hero-2 {
     height: 600px;
 
-    .fh5co-overlay {
+    .rozli-overlay {
       position: absolute !important;
       width: 100%;
       top: 0;
@@ -363,7 +363,7 @@ figure {
   }
 }
 
-.fh5co-overlay {
+.rozli-overlay {
   position: absolute !important;
   width: 100%;
   top: 0;
@@ -374,7 +374,7 @@ figure {
   background: rgba($brand-black, .3);
 }
 
-.fh5co-cover {
+.rozli-cover {
   background-size: cover;
   position: relative;
   @media screen and (max-width: $screen-sm) {
@@ -386,7 +386,7 @@ figure {
     opacity: .9;
     @include border-radius(30px);
   }
-  &.fh5co-cover_2 {
+  &.rozli-cover_2 {
     height: 600px;
     @media screen and (max-width: $screen-sm) {
       heifght: inherit;
@@ -441,7 +441,7 @@ figure {
           // }
         }
 
-        &.fh5co-site-name {
+        &.rozli-site-name {
           padding-bottom: 2px;
           border-bottom: 1px solid rgba($brand-white, .7);
         }
@@ -558,7 +558,7 @@ figure {
   border-left-color: #ccc;
 }
 
-#fh5co-header-section {
+#rozli-header-section {
   background: rgba($brand-white, .95);
   position: absolute;
   top: 40px;
@@ -628,7 +628,7 @@ figure {
    vertical-align: middle;
  }
 
-#fh5co-menu-wrap {
+#rozli-menu-wrap {
   position: relative;
   z-index: 2;
   display: block;
@@ -639,7 +639,7 @@ figure {
   }
 }
 
-#fh5co-primary-menu {
+#rozli-primary-menu {
   > li {
     > ul {
       li {
@@ -683,7 +683,7 @@ figure {
   }
 }
 
-#fh5co-primary-menu .fh5co-sub-menu {
+#rozli-primary-menu .rozli-sub-menu {
   padding: 10px 7px 10px;
   background: $brand-white;
   left: 0;
@@ -697,7 +697,7 @@ figure {
   -o-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   > li {
-    > .fh5co-sub-menu {
+    > .rozli-sub-menu {
       left: 100%;
     }
   }
@@ -716,7 +716,7 @@ figure {
   }
 }
 
-#fh5co-primary-menu .fh5co-sub-menu a {
+#rozli-primary-menu .rozli-sub-menu a {
   letter-spacing: 0;
   padding: 0 15px;
   font-size: 18px;
@@ -730,8 +730,8 @@ figure {
   }
 }
 
-//fh5co-hero
-#fh5co-hero {
+//rozli-hero
+#rozli-hero {
   min-height: 700px;
   background: $brand-white url(../images/loader.gif) no-repeat center center;
   .btn {
@@ -848,7 +848,7 @@ figure {
             font-size: 40px;
           }
         }
-        .fh5co-lead {
+        .rozli-lead {
           font-size: 20px;
           color: $brand-white;
           .icon-heart {
@@ -860,8 +860,8 @@ figure {
   }
 }
 
-#fh5co-work-section, #fh5co-services-section,
-#fh5co-team-section, #fh5co-contact-section {
+#rozli-work-section, #rozli-services-section,
+#rozli-team-section, #rozli-contact-section {
   padding: 7em 0;
 }
 
@@ -939,7 +939,7 @@ figure {
 }
 
 //Projects
-#fh5co-section {
+#rozli-section {
   float: left;
   width: 100%;
   display: block;
@@ -1014,7 +1014,7 @@ figure {
 }
 
 //About
-.fh5co-staff {
+.rozli-staff {
   img {
     margin-bottom: 1.5em;
   }
@@ -1029,7 +1029,7 @@ figure {
     color: rgba(0, 0, 0, .4);
     font-family: $font-primary;
   }
-  .fh5co-social {
+  .rozli-social {
     text-align: center;
     a {
       color: $brand-black;
@@ -1041,11 +1041,11 @@ figure {
   margin-bottom: 5em;
 }
 
-.fh5co-heading {
+.rozli-heading {
   margin-bottom: 2.5em;
 }
 
-.fh5co-social {
+.rozli-social {
   padding: 0;
   margin: 0;
   li {
@@ -1078,13 +1078,13 @@ figure {
 }
 
 //PARALLAX
-.fh5co-table,
-.fh5co-table-cell,
-.fh5co-parallax {
+.rozli-table,
+.rozli-table-cell,
+.rozli-parallax {
   height: 500px;
 }
 
-.fh5co-parallax {
+.rozli-parallax {
   background-color: #555;
   background-attachment: fixed;
   background-size: cover;
@@ -1100,12 +1100,12 @@ figure {
   }
 }
 
-.fh5co-parallax {
+.rozli-parallax {
   @media screen and (max-width: $screen-sm) {
     height: inherit;
     padding: 4em 0;
   }
-  .fh5co-intro {
+  .rozli-intro {
     h1 {
       color: $brand-white;
       font-size: 70px;
@@ -1132,16 +1132,16 @@ figure {
   }
 }
 
-.fh5co-table {
+.rozli-table {
   display: table;
 }
 
-.fh5co-table-cell {
+.rozli-table-cell {
   display: table-cell;
   vertical-align: middle;
 }
 
-#fh5co-contact-section {
+#rozli-contact-section {
   .contact-info {
     margin: 0;
     padding: 0;
@@ -1206,7 +1206,7 @@ figure {
   }
 }
 
-.fh5co-social-icons {
+.rozli-social-icons {
   > a {
     padding: 4px 10px;
     color: $brand-primary;
@@ -1346,28 +1346,28 @@ figure {
   }
 }
 
-#fh5co-wrapper {
+#rozli-wrapper {
   overflow-x: hidden;
   position: relative;
 }
 
-.fh5co-offcanvas {
+.rozli-offcanvas {
   overflow: hidden;
-  #fh5co-wrapper {
+  #rozli-wrapper {
     overflow: hidden !important;
   }
 }
 
-#fh5co-page {
+#rozli-page {
   position: relative;
   @include transition(.5s);
-  .fh5co-offcanvas & {
-    @include fh5co-translateX(-240px);
+  .rozli-offcanvas & {
+    @include rozli-translateX(-240px);
   }
 }
 
 // offcanvas
-#fh5co-menu-wrap {
+#rozli-menu-wrap {
   @media screen and (max-width: $screen-sm) {
     display: none;
   }
@@ -1400,7 +1400,7 @@ figure {
           color: $brand-primary;
         }
       }
-      > .fh5co-sub-menu {
+      > .rozli-sub-menu {
         margin-top: 9px;
         padding-left: 20px;
       }
@@ -1410,14 +1410,14 @@ figure {
         }
       }
     }
-    .fh5co-sub-menu {
+    .rozli-sub-menu {
       display: block !important;
     }
   }
 }
 
 // Burger Menu
-.fh5co-nav-toggle {
+.rozli-nav-toggle {
 
   cursor: pointer;
   text-decoration: none;
@@ -1472,27 +1472,27 @@ figure {
   }
 }
 
-.fh5co-nav-toggle i::before {
+.rozli-nav-toggle i::before {
   top: -7px;
 }
 
-.fh5co-nav-toggle i::after {
+.rozli-nav-toggle i::after {
   bottom: -7px;
 }
 
-.fh5co-nav-toggle:hover i::before {
+.rozli-nav-toggle:hover i::before {
   top: -10px;
 }
 
-.fh5co-nav-toggle:hover i::after {
+.rozli-nav-toggle:hover i::after {
   bottom: -10px;
 }
 
-.fh5co-nav-toggle.active i {
+.rozli-nav-toggle.active i {
   background: transparent;
 }
 
-.fh5co-nav-toggle.active i::before {
+.rozli-nav-toggle.active i::before {
   top: 0;
   -webkit-transform: rotateZ(45deg);
   -moz-transform: rotateZ(45deg);
@@ -1501,7 +1501,7 @@ figure {
   transform: rotateZ(45deg);
 }
 
-.fh5co-nav-toggle.active i::after {
+.rozli-nav-toggle.active i::after {
   bottom: 0;
   -webkit-transform: rotateZ(-45deg);
   -moz-transform: rotateZ(-45deg);
@@ -1510,7 +1510,7 @@ figure {
   transform: rotateZ(-45deg);
 }
 
-.fh5co-nav-toggle {
+.rozli-nav-toggle {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1597,7 +1597,7 @@ figure {
   top: 0;
 }
 
-.fh5co-loader {
+.rozli-loader {
   position: fixed;
   left: 0px;
   top: 0px;
