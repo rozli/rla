@@ -105,9 +105,14 @@
                 controller: 'ForestController',
                 controllerAs: CONTROLLER_AS_VIEW_MODEL
             })
-            .when('/decoupage/bottles/guski', {
+            .when('/decoupage/bottles/gooses', {
                 templateUrl: '../../views/partials/decoupage/bottlesGuski.html',
                 controller: 'GuskiController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/decoupage/bottles/foxy', {
+                templateUrl: '../../views/partials/decoupage/bottlesFoxy.html',
+                controller: 'FoxyController',
                 controllerAs: CONTROLLER_AS_VIEW_MODEL
             })
             .when('/decoupage/cups', {
@@ -232,6 +237,8 @@
             bottleLighthouse: 'Бутилка "Фарът"',
             bottleForest: 'Бутилка "Живот в гората"',
             boatAhtopol: 'Камък "Рибарска лодка Ахтопол"',
+            bottleGuski: 'Бутилката с гъските',
+            bottleFoxy: 'Лисичката Фокси',
             kamen: 'Камък "Лосът Камен"',
             champHeading: 'Сватбено шампанско',
             champMagic: 'Шампанско "Вълшебство"',

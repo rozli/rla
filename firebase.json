@@ -78,6 +78,16 @@
         "type": 301
       },
       {
+        "source": "/decoupage/bottles/foxy",
+        "destination": "/#/decoupage/bottles/foxy",
+        "type": 301
+      },
+      {
+        "source": "/decoupage/bottles/gooses",
+        "destination": "/#/decoupage/bottles/gooses",
+        "type": 301
+      },
+      {
         "source": "/decoupage/cups",
         "destination": "/#/decoupage/cups",
         "type": 301

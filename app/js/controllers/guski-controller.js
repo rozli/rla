@@ -7,7 +7,7 @@
 
         $scope.gSlider = {
             imageUrl: '../../images/s_decoupage_1.jpg',
-            heading: 'Гъски',
+            heading: $rootScope.texts.bottlesHeading,
             subheading: $sce.trustAsHtml('Направенo с <i class="icon-heart3"></i> от <a href="https://www.rozliart.com">RozLi Art</a>')
         };
 
