@@ -79,8 +79,20 @@ module.exports = function(grunt) {
         uglify: {
             my_target: {
                 files: {
-                    'public/js/site.min.js': ['app/js/main.js', 'app/js/app.js', 'app/js/jquery.easing.1.3.js', 'app/js/jquery.waypoints.min.js', 'app/js/superfish.js', 'app/js/hoverIntent.js', 'app/js/jquery.flexslider-min.js', 'app/js/angular-socialshare.min.js', 'app/js/jquery.ez-plus.js', 'app/js/modernizr-2.6.2.min.js', 'app/js/bootstrap.min.js', 'app/js/services/page-title-service.js', 'app/js/controllers/*.js'],
-                    'dev/js/site.min.js': ['app/js/main.js', 'app/js/app.js', 'app/js/jquery.easing.1.3.js', 'app/js/jquery.waypoints.min.js', 'app/js/superfish.js', 'app/js/hoverIntent.js', 'app/js/jquery.flexslider-min.js', 'app/js/angular-socialshare.min.js', 'app/js/jquery.ez-plus.js', 'app/js/modernizr-2.6.2.min.js', 'app/js/bootstrap.min.js', 'app/js/services/page-title-service.js', 'app/js/controllers/*.js']
+                    'dev/js/site.min.js': ['app/js/main.js', 'app/js/app.js', 'app/js/jquery.easing.1.3.js', 'app/js/jquery.waypoints.min.js', 'app/js/superfish.js', 'app/js/hoverIntent.js', 'app/js/jquery.flexslider-min.js', 'app/js/angular-socialshare.min.js', 'app/js/jquery.ez-plus.js', 'app/js/modernizr-2.6.2.min.js', 'app/js/bootstrap.min.js', 'app/js/services/page-title-service.js', 'app/js/controllers/*.js'],
+                    'public/js/site.min.js': ['app/js/main.js', 'app/js/app.js', 'app/js/jquery.easing.1.3.js', 'app/js/jquery.waypoints.min.js', 'app/js/superfish.js', 'app/js/hoverIntent.js', 'app/js/jquery.flexslider-min.js', 'app/js/angular-socialshare.min.js', 'app/js/jquery.ez-plus.js', 'app/js/modernizr-2.6.2.min.js', 'app/js/bootstrap.min.js', 'app/js/services/page-title-service.js', 'app/js/controllers/*.js']
+                }
+            }
+        },
+        cssmin: {
+            options: {
+                shorthandCompacting: false,
+                roundingPrecision: -1
+            },
+            target: {
+                files: {
+                    'dev/css/site.min.css': ['dev/css/animate.css', 'dev/css/icomoon.css', 'dev/css/style.css'],
+                    'public/css/site.min.css': ['dev/css/animate.css', 'dev/css/icomoon.css', 'dev/css/style.css']
                 }
             }
         },
@@ -104,6 +116,6 @@ module.exports = function(grunt) {
 
     require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('serve', ['sass:serve', 'jshint', 'csslint:serve', 'copy:serve', 'uglify', 'connect', 'watch']);
-    grunt.registerTask('build', ['copy:build', 'uglify']);
+    grunt.registerTask('serve', ['sass:serve', 'cssmin', 'copy:serve', 'uglify', 'connect', 'watch']);
+    grunt.registerTask('build', ['copy:build', 'uglify', 'cssmin']);
 };
