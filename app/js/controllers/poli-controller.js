@@ -10,7 +10,7 @@
 
         // FB share params
         $scope.fbShareURL = $rootScope.texts.url + $location.path();
-        $scope.fbShareMedia = $rootScope.texts.url + '/images/p_chair_poli_1.jpg';
+        $scope.fbShareMedia = $rootScope.texts.url + '/images/p_chair_poli_1_fb.jpg';
         $scope.fbShareDesc = $rootScope.texts.fbStart + $rootScope.texts.poliHeading;
     }
 

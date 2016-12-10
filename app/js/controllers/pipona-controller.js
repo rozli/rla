@@ -9,7 +9,7 @@
     rozLiJs.initializeGallery("pipona");
 
     $scope.fbShareURL = $rootScope.texts.url + $location.path();
-    $scope.fbShareMedia = $rootScope.texts.url + '/images/p_chair_pipona_1.jpg';
+    $scope.fbShareMedia = $rootScope.texts.url + '/images/p_chair_pipona_1_fb.jpg';
     $scope.fbShareDesc = $rootScope.texts.fbStart + $rootScope.texts.piponaHeading;
   }
 
