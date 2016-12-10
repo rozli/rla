@@ -378,7 +378,7 @@ figure {
   background-size: cover;
   position: relative;
   @media screen and (max-width: $screen-sm) {
-    heifght: inherit;
+    height: inherit;
     padding: 3em 0;
   }
   .btn {
@@ -389,7 +389,7 @@ figure {
   &.rozli-cover_2 {
     height: 600px;
     @media screen and (max-width: $screen-sm) {
-      heifght: inherit;
+      height: inherit;
       padding: 3em 0;
     }
 

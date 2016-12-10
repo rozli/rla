@@ -3,7 +3,7 @@
 
   function BottlesController($scope, $rootScope, $location, PageTitle) {
     var vm = this;
-    PageTitle.setTitle('RozLi - Декупаж/Бутилки');
+    PageTitle.setTitle('RozLi - ' + $rootScope.texts.bottlesHeading);
 
     rozLiJs.initialize();
 

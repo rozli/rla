@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
     grunt.initConfig({
         sass: {
             options: {
@@ -116,6 +116,6 @@ module.exports = function(grunt) {
 
     require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('serve', ['sass:serve', 'cssmin', 'copy:serve', 'uglify', 'connect', 'watch']);
+    grunt.registerTask('serve', ['sass:serve', 'copy:serve', 'cssmin', 'uglify', 'connect', 'watch']);
     grunt.registerTask('build', ['copy:build', 'uglify', 'cssmin']);
 };
