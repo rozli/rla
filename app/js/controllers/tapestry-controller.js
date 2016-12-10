@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  function TapestryController($scope, $sce, PageTitle) {
+  function TapestryController($scope, $sce, $rootScope, $location, PageTitle) {
     var vm = this;
     PageTitle.setTitle('RozLi - Гоблени');
 
@@ -11,8 +11,12 @@
     };
 
     rozLiJs.initializeZoom("goblen");
+
+    $scope.fbShareURL = $rootScope.texts.url + $location.path();
+    $scope.fbShareMedia = $rootScope.texts.url + '/images/goblen_1_w.jpeg';
+    $scope.fbShareDesc = $rootScope.texts.fbStart + $rootScope.texts.tapestryFarm;
   }
 
   angular.module('rozLi.controllers')
-    .controller('TapestryController', ['$scope', '$sce', 'PageTitle', TapestryController]);
+    .controller('TapestryController', ['$scope', '$sce', '$rootScope', '$location', 'PageTitle', TapestryController]);
 } ());

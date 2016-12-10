@@ -1,14 +1,18 @@
 (function () {
   'use strict';
 
-  function KamenController($rootScope, $scope, PageTitle) {
+  function KamenController($scope, $rootScope, $location, PageTitle) {
     var vm = this;
     PageTitle.setTitle('RozLi - Лосът Камен');
 
     rozLiJs.initialize();
     rozLiJs.initializeZoom("kamen");
+
+    $scope.fbShareURL = $rootScope.texts.url + $location.path();
+    $scope.fbShareMedia = $rootScope.texts.url + '/images/p_rocks_kamen_1.jpg';
+    $scope.fbShareDesc = $rootScope.texts.fbStart + $rootScope.texts.kamen;
   }
 
   angular.module('rozLi.controllers')
-    .controller('KamenController', ['$rootScope', '$scope', 'PageTitle', KamenController]);
+    .controller('KamenController', ['$scope', '$rootScope', '$location', 'PageTitle', KamenController]);
 } ());

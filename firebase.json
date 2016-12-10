@@ -113,6 +113,11 @@
         "type": 301
       },
       {
+        "source": "/weddings/champagne/silver",
+        "destination": "/#/weddings/champagne/silver",
+        "type": 301
+      },
+      {
         "source": "/weddings/baskets",
         "destination": "/#/weddings/baskets",
         "type": 301

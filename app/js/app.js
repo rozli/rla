@@ -1,4 +1,4 @@
-(function() {
+(function () {
     'use strict';
 
     function config($routeProvider, $locationProvider) {
@@ -165,13 +165,13 @@
 
     angular.module('rozLi.services', []);
     angular.module('rozLi.controllers', ['rozLi.services'])
-        .directive('cnotFinished', function() {
+        .directive('cnotFinished', function () {
             return {
                 restrict: 'A',
                 templateUrl: '../views/partials/chairs/chairNotFinished.html'
             };
         })
-        .directive('rlSlider', function() {
+        .directive('rlSlider', function () {
             return {
                 restrict: 'E',
                 replace: true,
@@ -179,7 +179,7 @@
                     slider: '=info'
                 },
                 templateUrl: '../views/partials/slider.html',
-                link: function() {
+                link: function () {
                     rozLiJs.initialize();
                 }
             };
@@ -230,13 +230,15 @@
             kamen: 'Камък "Лосът Камен"',
             champHeading: 'Сватбено шампанско',
             champMagic: 'Шампанско "Вълшебство"',
-            champSilver: 'Шампанско "Сребърна перла"'
+            champSilver: 'Шампанско "Сребърна перла"',
+            tapestryFarm: 'Гоблен "Голямата ферма"',
+            antfarm: 'Мравеферма "Старата възрожденска къща"'
         };
 
         // initialise google analytics
         $window.ga('create', 'UA-88641929-1', 'auto');
 
-        $rootScope.$on('$routeChangeSuccess', function() {
+        $rootScope.$on('$routeChangeSuccess', function () {
 
             var location = $location.path();
 
@@ -265,7 +267,7 @@
         });
 
         // Activate bootstrap tooltips
-        $(document).ready(function() {
+        $(document).ready(function () {
             $("body").tooltip({ selector: '[data-toggle=tooltip]' });
         });
     }
