@@ -10,9 +10,9 @@
         rozLiJs.initialize();
 
         // FB share params
-        $scope.fbShareURL = $rootScope.texts.url;
-        $scope.fbShareMedia = $rootScope.texts.url + '/images/s_decoupage_1.jpg';
-        $scope.fbShareDesc = $rootScope.texts.fbStart + 'Декупаж и дребни подаръци';
+        $rootScope.texts.fbShareURL = $rootScope.texts.url;
+        $rootScope.texts.fbShareMedia = $rootScope.texts.url + '/images/s_decoupage_1.jpg';
+        $rootScope.texts.fbShareDesc = $rootScope.texts.fbStart + 'Декупаж и дребни подаръци';
 
         $rootScope.$on('$routeChangeSuccess', function() {
 
@@ -30,7 +30,7 @@
             $scope.inChamp = location.indexOf('weddings/champagne') > 0;
             $scope.inBaskets = location.indexOf('weddings/baskets') > 0;
             $scope.showFbShare =
-                location.length < 11 ||
+                (location.length < 11 && location !== '/contact') ||
                 location === '/decoupage/bottles' ||
                 location === '/decoupage/rocks' ||
                 location === '/weddings/champagne';
