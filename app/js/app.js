@@ -105,6 +105,11 @@
                 controller: 'ForestController',
                 controllerAs: CONTROLLER_AS_VIEW_MODEL
             })
+            .when('/decoupage/bottles/guski', {
+                templateUrl: '../../views/partials/decoupage/bottlesGuski.html',
+                controller: 'GuskiController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
             .when('/decoupage/cups', {
                 templateUrl: '../views/partials/decoupage/decoupageCups.html',
                 controller: 'CupsController',
@@ -178,7 +183,7 @@
                 scope: {
                     slider: '=info'
                 },
-                templateUrl: '../views/partials/slider.html',
+                templateUrl: '../../views/partials/slider.html',
                 link: function () {
                     rozLiJs.initialize();
                 }

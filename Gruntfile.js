@@ -59,7 +59,7 @@ module.exports = function (grunt) {
             },
             copy: {
                 files: ['app/views/**/*.html', 'app/*.html', 'app/**/*.js', 'app/**/*.css'],
-                tasks: ['copy'],
+                tasks: ['copy', 'uglify'],
                 options: {
                     livereload: true
                 }
