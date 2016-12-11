@@ -79,8 +79,8 @@ module.exports = function (grunt) {
         uglify: {
             my_target: {
                 files: {
-                    'dev/js/site.min.js': ['app/js/main.js', 'app/js/app.js', 'app/js/jquery.easing.1.3.js', 'app/js/jquery.waypoints.min.js', 'app/js/superfish.js', 'app/js/hoverIntent.js', 'app/js/jquery.flexslider-min.js', 'app/js/angular-socialshare.min.js', 'app/js/jquery.ez-plus.js', 'app/js/modernizr-2.6.2.min.js', 'app/js/bootstrap.min.js', 'app/js/services/page-title-service.js', 'app/js/controllers/*.js'],
-                    'public/js/site.min.js': ['app/js/main.js', 'app/js/app.js', 'app/js/jquery.easing.1.3.js', 'app/js/jquery.waypoints.min.js', 'app/js/superfish.js', 'app/js/hoverIntent.js', 'app/js/jquery.flexslider-min.js', 'app/js/angular-socialshare.min.js', 'app/js/jquery.ez-plus.js', 'app/js/modernizr-2.6.2.min.js', 'app/js/bootstrap.min.js', 'app/js/services/page-title-service.js', 'app/js/controllers/*.js']
+                    'dev/js/site-1.0.min.js': ['app/js/main.js', 'app/js/app.js', 'app/js/jquery.easing.1.3.js', 'app/js/jquery.waypoints.min.js', 'app/js/superfish.js', 'app/js/hoverIntent.js', 'app/js/jquery.flexslider-min.js', 'app/js/angular-socialshare.min.js', 'app/js/jquery.ez-plus.js', 'app/js/modernizr-2.6.2.min.js', 'app/js/bootstrap.min.js', 'app/js/services/page-title-service.js', 'app/js/controllers/*.js'],
+                    'public/js/site-1.0.min.js': ['app/js/main.js', 'app/js/app.js', 'app/js/jquery.easing.1.3.js', 'app/js/jquery.waypoints.min.js', 'app/js/superfish.js', 'app/js/hoverIntent.js', 'app/js/jquery.flexslider-min.js', 'app/js/angular-socialshare.min.js', 'app/js/jquery.ez-plus.js', 'app/js/modernizr-2.6.2.min.js', 'app/js/bootstrap.min.js', 'app/js/services/page-title-service.js', 'app/js/controllers/*.js']
                 }
             }
         },
@@ -91,8 +91,8 @@ module.exports = function (grunt) {
             },
             target: {
                 files: {
-                    'dev/css/site.min.css': ['dev/css/animate.css', 'dev/css/icomoon.css', 'dev/css/style.css'],
-                    'public/css/site.min.css': ['dev/css/animate.css', 'dev/css/icomoon.css', 'dev/css/style.css']
+                    'dev/css/site-1.0.min.css': ['dev/css/animate.css', 'dev/css/icomoon.css', 'dev/css/style.css'],
+                    'public/css/site-1.0.min.css': ['dev/css/animate.css', 'dev/css/icomoon.css', 'dev/css/style.css']
                 }
             }
         },
