@@ -7,7 +7,8 @@
 
         $scope.cSlider = {
             imageUrl: 'images/s_checkout.jpg',
-            heading: 'Как да купя?'
+            heading: 'Как да купя?',
+            initialize: true
         };
 
         $scope.submitForm = function () {

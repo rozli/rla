@@ -7,7 +7,8 @@
 
     $scope.tSlider = {
       imageUrl: '../images/slide_3.jpg',
-      heading: 'Гоблени'
+      heading: 'Гоблени',
+      initialize: true
     };
 
     rozLiJs.initializeZoom("goblen");

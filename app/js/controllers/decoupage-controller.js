@@ -8,7 +8,8 @@
     $scope.dSlider = {
       imageUrl: 'images/s_decoupage_1.jpg',
       heading: 'Декупаж',
-      subheading: $sce.trustAsHtml('Направенo с <i class="icon-heart3"></i> от <a href="https://www.rozliart.com">RozLi Art</a>')
+      subheading: $sce.trustAsHtml($rootScope.texts.madeWithLove),
+      initialize: true
     };
 
     $rootScope.texts.fbShareURL = $rootScope.texts.url + $location.path();

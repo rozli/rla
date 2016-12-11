@@ -107,7 +107,7 @@
             })
             .when('/decoupage/bottles/gooses', {
                 templateUrl: '../../views/partials/decoupage/bottlesGuski.html',
-                controller: 'GuskiController',
+                controller: 'GoosesController',
                 controllerAs: CONTROLLER_AS_VIEW_MODEL
             })
             .when('/decoupage/bottles/foxy', {
@@ -189,8 +189,10 @@
                     slider: '=info'
                 },
                 templateUrl: '../../views/partials/slider.html',
-                link: function () {
-                    rozLiJs.initialize();
+                link: function (scope, element, attrs, controller, transcludeFn) {
+                    if (scope.slider.initialize) {
+                        rozLiJs.initialize();
+                    }
                 }
             };
         });
@@ -214,6 +216,9 @@
             fbShareMedia: '',
             details: "Детайли",
             material: "Материал",
+            desc: 'Описание',
+            measure: 'Размери',
+            madeWithLove: 'Направенo с <i class="icon-heart3"></i> от <a href="https://www.rozliart.com">RozLi Art</a>',
             materialTxt: "Масив иглолистна дървесина, акрилни бои, техника декупаж, фиксирани с безцветен яхтен лак.",
             materialStoneTxt: "Камък, акрилни бои, техника декупаж, фиксиран със салфетен лак.",
             maintenance: "Поддръжка",
@@ -233,12 +238,13 @@
             cowboyHeading: 'Детско столче "Приключенията на Дъмбо Каубоеца"',
             rocksHeading: "Ръчно украсени камъни",
             bottlesHeading: "Декупаж върху бутилки",
+            bottlesDescription: 'Ръчно декорирана бутилка с техниката декупаж, в която да напълните любимото си питие',
             bottleBike: 'Бутилка "На море с колело"',
             bottleLighthouse: 'Бутилка "Фарът"',
             bottleForest: 'Бутилка "Живот в гората"',
             boatAhtopol: 'Камък "Рибарска лодка Ахтопол"',
-            bottleGuski: 'Бутилката с гъските',
-            bottleFoxy: 'Лисичката Фокси',
+            bottleGooses: 'Бутилка "Гъските на Жозефин"',
+            bottleFoxy: 'Бутилка "Фокси"',
             kamen: 'Камък "Лосът Камен"',
             champHeading: 'Сватбено шампанско',
             champMagic: 'Шампанско "Вълшебство"',
