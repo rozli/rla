@@ -1,11 +1,17 @@
 (function () {
   'use strict';
 
-  function PiponaController($rootScope, $scope, $location, PageTitle) {
+  function PiponaController($rootScope, $scope, $sce, $location, PageTitle) {
     var vm = this;
     PageTitle.setTitle('RozLi - Приказната вила Пипона');
 
-    rozLiJs.initialize();
+    $scope.cSlider = {
+      imageUrl: '../images/s_chairs_2.jpg',
+      heading: $rootScope.texts.chairsHeading,
+      subheading: $sce.trustAsHtml($rootScope.texts.madeWithLove),
+      initialize: true
+    };
+
     rozLiJs.initializeGallery("pipona");
 
     $scope.fbShareURL = $rootScope.texts.url + $location.path();
@@ -14,5 +20,5 @@
   }
 
   angular.module('rozLi.controllers')
-    .controller('PiponaController', ['$rootScope', '$scope', '$location', 'PageTitle', PiponaController]);
+    .controller('PiponaController', ['$rootScope', '$scope', '$sce', '$location', 'PageTitle', PiponaController]);
 } ());

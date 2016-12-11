@@ -11,8 +11,8 @@
 
         // FB share params
         $rootScope.texts.fbShareURL = $rootScope.texts.url;
-        $rootScope.texts.fbShareMedia = $rootScope.texts.url + '/images/s_decoupage_1.jpg';
-        $rootScope.texts.fbShareDesc = $rootScope.texts.fbStart + 'Декупаж и дребни подаръци';
+        $rootScope.texts.fbShareMedia = $rootScope.texts.url + '/images/s_xmas_bottles.jpg';
+        $rootScope.texts.fbShareDesc = $rootScope.texts.fbStart + 'Украсете празничната си трапеза';
 
         $rootScope.$on('$routeChangeSuccess', function() {
 

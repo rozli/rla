@@ -1,11 +1,17 @@
 (function () {
     'use strict';
 
-    function PoliController($rootScope, $scope, $location, PageTitle) {
+    function PoliController($rootScope, $scope, $sce, $location, PageTitle) {
         var vm = this;
         PageTitle.setTitle('RozLi - На разходка с Поли');
 
-        rozLiJs.initialize();
+        $scope.cSlider = {
+            imageUrl: '../images/s_chairs_2.jpg',
+            heading: $rootScope.texts.chairsHeading,
+            subheading: $sce.trustAsHtml($rootScope.texts.madeWithLove),
+            initialize: true
+        };
+
         rozLiJs.initializeGallery("poli");
 
         // FB share params
@@ -15,5 +21,5 @@
     }
 
     angular.module('rozLi.controllers')
-        .controller('PoliController', ['$rootScope', '$scope', '$location', 'PageTitle', PoliController]);
+        .controller('PoliController', ['$rootScope', '$scope', '$sce', '$location', 'PageTitle', PoliController]);
 } ());
