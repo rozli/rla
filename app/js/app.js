@@ -120,6 +120,11 @@
                 controller: 'MatrioshkiController',
                 controllerAs: CONTROLLER_AS_VIEW_MODEL
             })
+            .when('/decoupage/bottles/xmas', {
+                templateUrl: '../../views/partials/decoupage/bottlesXmas.html',
+                controller: 'XmasController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
             .when('/decoupage/cups', {
                 templateUrl: '../views/partials/decoupage/decoupageCups.html',
                 controller: 'CupsController',
@@ -251,6 +256,7 @@
             bottleGooses: 'Бутилка "Гъските на Жозефин"',
             bottleFoxy: 'Бутилка "Фокси"',
             bottleMatrioshki: 'Бутилка "Матрьошки"',
+            bottleXmas: 'Бутилка "Снежната пързалка"',
             kamen: 'Камък "Лосът Камен"',
             champHeading: 'Сватбено шампанско',
             champMagic: 'Шампанско "Вълшебство"',
@@ -291,6 +297,7 @@
             $('#guski-zoomContainer').remove();
             $('#foxes-zoomContainer').remove();
             $('#matrioshki-zoomContainer').remove();
+            $('#xmas-zoomContainer').remove();
         });
 
         // Activate bootstrap tooltips
