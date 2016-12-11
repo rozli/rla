@@ -339,6 +339,12 @@ figure {
   z-index: 9999999;
 }
 
+.container{
+  @media screen and (min-width: 768px) and (max-width: 1024px)  {
+    width: auto !important;
+  }
+}
+
 .rozli-cover,
 .rozli-hero {
   position: relative;
@@ -483,6 +489,10 @@ figure {
   letter-spacing: 1px;
   // border: 1px solid red;
 
+  @media screen and (max-width: 1200px) {
+    font-size: 13px;
+  }
+
   &:hover, &.active {
     background: lighten($brand-black, 90%) !important;
     color: $brand-black !important;
@@ -592,12 +602,24 @@ figure {
   background-size: 80%;
 }
 
+#homeLink{
+  @media screen and (max-width: 992px) {
+    display:none;
+  }
+}
+
 #rozli-logo {
   margin-top: 1em;
 
+  @media screen and (max-width: 1200px) {
+    height:30px;
+  }
+
+  @media screen and (max-width: 992px) {
+    height:25px;
+  }
+
   @media screen and (max-width: $screen-sm) {
-    // width: 100%;
-    // float: none;
     margin-top: 0.5em;
   }
 }
