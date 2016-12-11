@@ -1,4 +1,0 @@
-RozLi 0.0.0.2
--- Grunt added & configured. Run grunt-serve, then grunt-build --force to populate 'public' with deployment ready web
-RozLi 0.0.0.4
--- Added angular, skeleton of modular infrastructure

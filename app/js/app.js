@@ -115,6 +115,11 @@
                 controller: 'FoxyController',
                 controllerAs: CONTROLLER_AS_VIEW_MODEL
             })
+            .when('/decoupage/bottles/matrioshki', {
+                templateUrl: '../../views/partials/decoupage/bottlesMatrioshki.html',
+                controller: 'MatrioshkiController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
             .when('/decoupage/cups', {
                 templateUrl: '../views/partials/decoupage/decoupageCups.html',
                 controller: 'CupsController',
@@ -245,6 +250,7 @@
             boatAhtopol: 'Камък "Рибарска лодка Ахтопол"',
             bottleGooses: 'Бутилка "Гъските на Жозефин"',
             bottleFoxy: 'Бутилка "Фокси"',
+            bottleMatrioshki: 'Бутилка "Матрьошки"',
             kamen: 'Камък "Лосът Камен"',
             champHeading: 'Сватбено шампанско',
             champMagic: 'Шампанско "Вълшебство"',
@@ -282,6 +288,9 @@
             $('#forest-zoomContainer').remove();
             $('#magic-zoomContainer').remove();
             $('#silver-zoomContainer').remove();
+            $('#guski-zoomContainer').remove();
+            $('#foxes-zoomContainer').remove();
+            $('#matrioshki-zoomContainer').remove();
         });
 
         // Activate bootstrap tooltips

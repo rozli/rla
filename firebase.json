@@ -88,6 +88,11 @@
         "type": 301
       },
       {
+        "source": "/decoupage/bottles/matrioshki",
+        "destination": "/#/decoupage/bottles/matrioshki",
+        "type": 301
+      },
+      {
         "source": "/decoupage/cups",
         "destination": "/#/decoupage/cups",
         "type": 301
