@@ -125,6 +125,21 @@
                 controller: 'XmasController',
                 controllerAs: CONTROLLER_AS_VIEW_MODEL
             })
+            .when('/decoupage/bottles/snowmans', {
+                templateUrl: '../../views/partials/decoupage/bottlesSnowmans.html',
+                controller: 'SnowmansController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/decoupage/bottles/surikati', {
+                templateUrl: '../../views/partials/decoupage/bottlesSurikati.html',
+                controller: 'SurikatiController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/decoupage/bottles/dream', {
+                templateUrl: '../../views/partials/decoupage/bottlesDream.html',
+                controller: 'DreamController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
             .when('/decoupage/cups', {
                 templateUrl: '../views/partials/decoupage/decoupageCups.html',
                 controller: 'CupsController',
@@ -257,6 +272,9 @@
             bottleFoxy: 'Бутилка "Фокси"',
             bottleMatrioshki: 'Бутилка "Матрьошки"',
             bottleXmas: 'Бутилка "Снежната пързалка"',
+            bottleSnowmans: 'Бутилка "Снежковците"',
+            bottleSurikati: 'Бутилка "Сурикати: бой с топки"',
+            bottleDream: 'Бутилка "Коледна мечта"',
             kamen: 'Камък "Лосът Камен"',
             champHeading: 'Сватбено шампанско',
             champMagic: 'Шампанско "Вълшебство"',
@@ -298,6 +316,9 @@
             $('#foxes-zoomContainer').remove();
             $('#matrioshki-zoomContainer').remove();
             $('#xmas-zoomContainer').remove();
+            $('#snowmans-zoomContainer').remove();
+            $('#surikati-zoomContainer').remove();
+            $('#dream-zoomContainer').remove();
         });
 
         // Activate bootstrap tooltips

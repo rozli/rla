@@ -93,6 +93,26 @@
         "type": 301
       },
       {
+        "source": "/decoupage/bottles/xmas",
+        "destination": "/#/decoupage/bottles/xmas",
+        "type": 301
+      },
+      {
+        "source": "/decoupage/bottles/snowmans",
+        "destination": "/#/decoupage/bottles/snowmans",
+        "type": 301
+      },
+      {
+        "source": "/decoupage/bottles/surikati",
+        "destination": "/#/decoupage/bottles/surikati",
+        "type": 301
+      },
+      {
+        "source": "/decoupage/bottles/dream",
+        "destination": "/#/decoupage/bottles/dream",
+        "type": 301
+      },
+      {
         "source": "/decoupage/cups",
         "destination": "/#/decoupage/cups",
         "type": 301
