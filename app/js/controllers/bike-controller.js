@@ -5,7 +5,8 @@
         var vm = this;
         PageTitle.setTitle('RozLi - На море с колело');
 
-        rozLiJs.initialize();
+        $scope.dSlider = $rootScope.bottlesSlider;
+
         rozLiJs.initializeZoom("bike");
 
         $scope.fbShareURL = $rootScope.texts.url + $location.path();
@@ -15,4 +16,4 @@
 
     angular.module('rozLi.controllers')
         .controller('BikeController', ['$scope', '$rootScope', '$location', 'PageTitle', BikeController]);
-} ());
+}());

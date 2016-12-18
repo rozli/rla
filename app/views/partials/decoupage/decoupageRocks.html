@@ -1,23 +1,21 @@
 <aside id="rozli-hero" class="js-fullheight">
   <div class="flexslider js-fullheight">
     <ul class="slides">
-      <li style="background-image: url(../images/s_decoupage_1.jpg);">
-<div class="overlay-gradient"></div>
-<div class="container">
-  <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
-    <div class="slider-text-inner desc">
-      <h2 class="heading-section">Ръчно украсени камъни</h2>
-      <p class="rozli-lead">Направено с <i class="icon-heart3"></i> от <a href="https://www.rozliart.com">RozLi Art</a></p>
-    </div>
+      <rl-slider info="xSlider"></rl-slider>
+    </ul>
   </div>
-</div>
-</li>
-</ul>
-</div>
 </aside>
 <div id="rozli-work-section">
   <div class="container">
     <div class="row">
+      <div class="col-md-4 text-center project">
+        <a href="rocks/rojdestvo" class="grid-project">
+          <div class="image"><img src="../images/p_rocks_rojdestvo_1.jpg" alt='{{$root.texts.rockRojdestro}}' class="img-responsive"></div>
+          <div class="desc">
+            <h3>{{$root.texts.rockRojdestro}}</h3>
+          </div>
+        </a>
+      </div>
       <div class="col-md-4 text-center project">
         <a href="rocks/kamen" class="grid-project">
           <div class="image"><img src="../images/p_rocks_kamen_1.jpg" alt="{{$root.texts.kamen}}" class="img-responsive"></div>
@@ -31,14 +29,6 @@
           <div class="image"><img src="../images/p_rocks_ahtopol_1.jpg" alt='{{$root.texts.boatAhtopol}}' class="img-responsive"></div>
           <div class="desc">
             <h3>{{$root.texts.boatAhtopol}}</h3>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-4 text-center project">
-        <a href="rocks/rojdestvo" class="grid-project">
-          <div class="image"><img src="../images/p_rocks_rojdestvo_1.jpg" alt='{{$root.texts.rockRojdestro}}' class="img-responsive"></div>
-          <div class="desc">
-            <h3>{{$root.texts.rockRojdestro}}</h3>
           </div>
         </a>
       </div>

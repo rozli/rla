@@ -5,7 +5,8 @@
         var vm = this;
         PageTitle.setTitle('RozLi - Живот в гората');
 
-        rozLiJs.initialize();
+        $scope.dSlider = $rootScope.bottlesSlider;
+
         rozLiJs.initializeGallery("forest");
 
         $scope.fbShareURL = $rootScope.texts.url + $location.path();
@@ -15,4 +16,4 @@
 
     angular.module('rozLi.controllers')
         .controller('ForestController', ['$scope', '$rootScope', '$location', 'PageTitle', ForestController]);
-} ());
+}());

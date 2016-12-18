@@ -5,7 +5,8 @@
     var vm = this;
     PageTitle.setTitle('RozLi - Лосът Камен');
 
-    rozLiJs.initialize();
+    $scope.xSlider = $rootScope.rocksSlider;
+
     rozLiJs.initializeZoom("kamen");
 
     $scope.fbShareURL = $rootScope.texts.url + $location.path();
@@ -15,4 +16,4 @@
 
   angular.module('rozLi.controllers')
     .controller('KamenController', ['$scope', '$rootScope', '$location', 'PageTitle', KamenController]);
-} ());
+}());

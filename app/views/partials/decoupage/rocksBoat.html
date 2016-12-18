@@ -1,17 +1,7 @@
 <aside id="rozli-hero" class="js-fullheight">
     <div class="flexslider js-fullheight">
         <ul class="slides">
-            <li style="background-image: url(../../images/s_decoupage_1.jpg);">
-                <div class="overlay-gradient"></div>
-                <div class="container">
-                    <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
-                        <div class="slider-text-inner desc">
-                            <h2 class="heading-section">{{$root.texts.rocksHeading}}</h2>
-                            <p class="rozli-lead">Направено с <i class="icon-heart3"></i> от <a href="https://www.rozliart.com">RozLi Art</a></p>
-                        </div>
-                    </div>
-                </div>
-            </li>
+            <rl-slider info="xSlider"></rl-slider>
         </ul>
     </div>
 </aside>
@@ -44,16 +34,9 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <a                     
-                  socialshare 
-                  socialshare-provider="facebook" 
-                  socialshare-via="{{$root.texts.fbId}}" 
-                  socialshare-type="feed" 
-                  socialshare-description="{{fbShareDesc}}"
-                  socialshare-url="{{fbShareURL}}"
-                  socialshare-media="{{fbShareMedia}}"
-                  href="#"><img class="fb-share" src="../../../images/fb_share.png" alt="Share on FB">
-                </a>     
+                <a socialshare socialshare-provider="facebook" socialshare-via="{{$root.texts.fbId}}" socialshare-type="feed" socialshare-description="{{fbShareDesc}}"
+                    socialshare-url="{{fbShareURL}}" socialshare-media="{{fbShareMedia}}" href="#"><img class="fb-share" src="../../../images/fb_share.png" alt="Share on FB">
+                </a>
                 <div class="list-group">
                     <a href="#" class="list-group-item">
                         <h4 class="list-group-item-heading">Размери</h4>
@@ -80,5 +63,4 @@
             </div>
         </div>
     </div>
-</div>
 </div>

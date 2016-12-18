@@ -1,18 +1,19 @@
 (function () {
-    'use strict';
+  'use strict';
 
-    function BoatController($scope, $rootScope, $location, PageTitle) {
-        var vm = this;
-        PageTitle.setTitle('RozLi - Рибарска лодка Ахтопол');
+  function BoatController($scope, $rootScope, $location, PageTitle) {
+    var vm = this;
+    PageTitle.setTitle('RozLi - Рибарска лодка Ахтопол');
 
-        rozLiJs.initialize();
-        rozLiJs.initializeGallery("boat");
+    $scope.xSlider = $rootScope.rocksSlider;
 
-        $scope.fbShareURL = $rootScope.texts.url + $location.path();
-        $scope.fbShareMedia = $rootScope.texts.url + '/images/p_rocks_ahtopol_1.jpg';
-        $scope.fbShareDesc = $rootScope.texts.fbStart + $rootScope.texts.boatAhtopol;
-    }
+    rozLiJs.initializeGallery("boat");
 
-    angular.module('rozLi.controllers')
-        .controller('BoatController', ['$scope', '$rootScope', '$location', 'PageTitle', BoatController]);
-} ());
+    $scope.fbShareURL = $rootScope.texts.url + $location.path();
+    $scope.fbShareMedia = $rootScope.texts.url + '/images/p_rocks_ahtopol_1.jpg';
+    $scope.fbShareDesc = $rootScope.texts.fbStart + $rootScope.texts.boatAhtopol;
+  }
+
+  angular.module('rozLi.controllers')
+    .controller('BoatController', ['$scope', '$rootScope', '$location', 'PageTitle', BoatController]);
+}());

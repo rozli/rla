@@ -1,16 +1,11 @@
 (function () {
     'use strict';
 
-    function FoxyController($scope, $sce, $rootScope, $location, PageTitle) {
+    function FoxyController($scope, $rootScope, $location, PageTitle) {
         var vm = this;
         PageTitle.setTitle('RozLi - ' + $rootScope.texts.bottleFoxy);
 
-        $scope.fSlider = {
-            imageUrl: '../../images/s_xmas_bottles.jpg',
-            heading: $rootScope.texts.bottlesHeading,
-            subheading: $sce.trustAsHtml($rootScope.texts.madeWithLove),
-            initialize: true
-        };
+        $scope.fSlider = $rootScope.bXmasSlider;
 
         rozLiJs.initializeZoom("foxes");
 
@@ -20,5 +15,5 @@
     }
 
     angular.module('rozLi.controllers')
-        .controller('FoxyController', ['$scope', '$sce', '$rootScope', '$location', 'PageTitle', FoxyController]);
-} ());
+        .controller('FoxyController', ['$scope', '$rootScope', '$location', 'PageTitle', FoxyController]);
+}());

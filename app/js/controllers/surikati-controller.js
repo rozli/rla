@@ -1,16 +1,11 @@
 (function () {
     'use strict';
 
-    function SurikatiController($scope, $sce, $rootScope, $location, PageTitle) {
+    function SurikatiController($scope, $rootScope, $location, PageTitle) {
         var vm = this;
         PageTitle.setTitle('RozLi - ' + $rootScope.texts.bottleSurikati);
 
-        $scope.sSlider = {
-            imageUrl: '../../images/s_xmas_bottles.jpg',
-            heading: $rootScope.texts.bottlesHeading,
-            subheading: $sce.trustAsHtml($rootScope.texts.madeWithLove),
-            initialize: true
-        };
+        $scope.sSlider = $rootScope.bXmasSlider;
 
         rozLiJs.initializeZoom("surikati");
 
@@ -20,5 +15,5 @@
     }
 
     angular.module('rozLi.controllers')
-        .controller('SurikatiController', ['$scope', '$sce', '$rootScope', '$location', 'PageTitle', SurikatiController]);
-} ());
+        .controller('SurikatiController', ['$scope', '$rootScope', '$location', 'PageTitle', SurikatiController]);
+}());

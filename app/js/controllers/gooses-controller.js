@@ -1,16 +1,11 @@
 (function () {
     'use strict';
 
-    function GoosesController($scope, $sce, $rootScope, $location, PageTitle) {
+    function GoosesController($scope, $rootScope, $location, PageTitle) {
         var vm = this;
         PageTitle.setTitle('RozLi - ' + $rootScope.texts.bottleGooses);
 
-        $scope.gSlider = {
-            imageUrl: '../../images/s_xmas_bottles.jpg',
-            heading: $rootScope.texts.bottlesHeading,
-            subheading: $sce.trustAsHtml($rootScope.texts.madeWithLove),
-            initialize: true
-        };
+        $scope.gSlider = $rootScope.bXmasSlider;
 
         rozLiJs.initializeGallery("guski");
 
@@ -20,5 +15,5 @@
     }
 
     angular.module('rozLi.controllers')
-        .controller('GoosesController', ['$scope', '$sce', '$rootScope', '$location', 'PageTitle', GoosesController]);
-} ());
+        .controller('GoosesController', ['$scope', '$rootScope', '$location', 'PageTitle', GoosesController]);
+}());

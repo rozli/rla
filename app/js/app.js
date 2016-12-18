@@ -195,7 +195,9 @@
                 controller: 'TeachmeController',
                 controllerAs: CONTROLLER_AS_VIEW_MODEL
             })
-            .otherwise({ redirectTo: '/' });
+            .otherwise({
+                redirectTo: '/'
+            });
 
         $locationProvider.html5Mode({
             enabled: true,
@@ -232,8 +234,9 @@
         .constant('baseServiceUrl', 'http://localhost:53249');
 
     // Google Analytics for SPA
-    runFunction.$inject = ['$rootScope', '$location', '$window'];
-    function runFunction($rootScope, $location, $window) {
+    runFunction.$inject = ['$rootScope', '$location', '$window', '$sce'];
+
+    function runFunction($rootScope, $location, $window, $sce) {
 
         $rootScope.texts = {
             year: new Date().getFullYear(),
@@ -289,6 +292,27 @@
             antfarm: 'Мравеферма "Старата възрожденска къща"'
         };
 
+        $rootScope.rocksSlider = {
+            imageUrl: '../../images/s_decoupage_1.jpg',
+            heading: $rootScope.texts.rocksHeading,
+            subheading: $sce.trustAsHtml($rootScope.texts.madeWithLove),
+            initialize: true
+        };
+
+        $rootScope.bottlesSlider = {
+            imageUrl: '../../images/s_decoupage_1.jpg',
+            heading: $rootScope.texts.bottlesHeading,
+            subheading: $sce.trustAsHtml($rootScope.texts.madeWithLove),
+            initialize: true
+        };
+
+        $rootScope.bXmasSlider = {
+            imageUrl: '../../images/s_xmas_bottles.jpg',
+            heading: $rootScope.texts.bottlesHeading,
+            subheading: $sce.trustAsHtml($rootScope.texts.madeWithLove),
+            initialize: true
+        };
+
         // initialise google analytics
         $window.ga('create', 'UA-88641929-1', 'auto');
 
@@ -330,7 +354,9 @@
 
         // Activate bootstrap tooltips
         $(document).ready(function () {
-            $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+            $("body").tooltip({
+                selector: '[data-toggle=tooltip]'
+            });
         });
     }
-} ());
+}());

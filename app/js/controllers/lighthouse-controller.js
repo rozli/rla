@@ -5,7 +5,8 @@
         var vm = this;
         PageTitle.setTitle('RozLi - Фарът');
 
-        rozLiJs.initialize();
+        $scope.dSlider = $rootScope.bottlesSlider;
+
         rozLiJs.initializeGallery("lighthouse");
 
         $scope.fbShareURL = $rootScope.texts.url + $location.path();
@@ -15,4 +16,4 @@
 
     angular.module('rozLi.controllers')
         .controller('LighthouseController', ['$scope', '$rootScope', '$location', 'PageTitle', LighthouseController]);
-} ());
+}());
