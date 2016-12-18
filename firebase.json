@@ -133,6 +133,11 @@
         "type": 301
       },
       {
+        "source": "/decoupage/rocks/rojdestvo",
+        "destination": "/#/decoupage/rocks/rojdestvo",
+        "type": 301
+      },
+      {
         "source": "/weddings",
         "destination": "/#/weddings",
         "type": 301

@@ -160,6 +160,11 @@
                 controller: 'BoatController',
                 controllerAs: CONTROLLER_AS_VIEW_MODEL
             })
+            .when('/decoupage/rocks/rojdestvo', {
+                templateUrl: '../../views/partials/decoupage/rocksRojdestvo.html',
+                controller: 'RojdestvoController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
             .when('/weddings', {
                 templateUrl: '../views/partials/weddings/weddingsHome.html',
                 controller: 'WeddingsController',
@@ -275,6 +280,7 @@
             bottleSnowmans: 'Бутилка "Снежковците"',
             bottleSurikati: 'Бутилка "Сурикати: бой с топки"',
             bottleDream: 'Бутилка "Коледна мечта"',
+            rockRojdestro: 'Камък "Рождество Христово"',
             kamen: 'Камък "Лосът Камен"',
             champHeading: 'Сватбено шампанско',
             champMagic: 'Шампанско "Вълшебство"',
@@ -319,6 +325,7 @@
             $('#snowmans-zoomContainer').remove();
             $('#surikati-zoomContainer').remove();
             $('#dream-zoomContainer').remove();
+            $('#rojdestvo-zoomContainer').remove();
         });
 
         // Activate bootstrap tooltips
