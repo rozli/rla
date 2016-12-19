@@ -22,7 +22,6 @@ module.exports = function (grunt) {
                 files: [
                     { expand: true, cwd: 'app/fonts/', src: ['**'], dest: 'dev/fonts/', filter: 'isFile', flatten: false },
                     { expand: true, cwd: 'app/images/', src: ['**'], dest: 'dev/images/', filter: 'isFile', flatten: false },
-                    { expand: true, src: ['app/js/**/*.js'], dest: 'dev/js/', filter: 'isFile', flatten: true },
                     { expand: true, cwd: 'app/', src: ['*.html'], dest: 'dev/', flatten: true },
                     { expand: true, src: ['app/css/**/*.css'], dest: 'dev/css/', flatten: true },
                     { expand: true, cwd: 'app/views/', src: ['**'], dest: 'dev/views/', flatten: false }
@@ -32,7 +31,6 @@ module.exports = function (grunt) {
                 files: [
                     { expand: true, cwd: 'dev/fonts/', src: ['**'], dest: 'public/fonts/', filter: 'isFile', flatten: false },
                     { expand: true, cwd: 'dev/images/', src: ['**'], dest: 'public/images/', filter: 'isFile', flatten: false },
-                    { expand: true, src: ['dev/js/*.js'], dest: 'public/js/', filter: 'isFile', flatten: true },
                     { expand: true, src: ['dev/*.html'], dest: 'public/', flatten: true },
                     { expand: true, src: ['dev/css/*.css'], dest: 'public/css/', flatten: true },
                     { expand: true, cwd: 'dev/views/', src: ['**'], dest: 'public/views/', flatten: false }
