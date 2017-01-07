@@ -1,8 +1,7 @@
 {
   "hosting": {
     "public": "public",
-    "redirects": [
-      {
+    "redirects": [{
         "source": "/contact",
         "destination": "/#/contact",
         "type": 301
@@ -138,6 +137,21 @@
         "type": 301
       },
       {
+        "source": "/decoupage/rocks/simeon",
+        "destination": "/#/decoupage/rocks/simeon",
+        "type": 301
+      },
+      {
+        "source": "/decoupage/rocks/lisici",
+        "destination": "/#/decoupage/rocks/lisici",
+        "type": 301
+      },
+      {
+        "source": "/decoupage/rocks/impuls",
+        "destination": "/#/decoupage/rocks/impuls",
+        "type": 301
+      },
+      {
         "source": "/weddings",
         "destination": "/#/weddings",
         "type": 301
@@ -178,42 +192,33 @@
         "type": 301
       }
     ],
-    "headers": [
-      {
+    "headers": [{
         "source": "**/*.@(jpg|jpeg|gif|png)",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "max-age=604800"
-          }
-        ]
+        "headers": [{
+          "key": "Cache-Control",
+          "value": "max-age=604800"
+        }]
       },
       {
         "source": "**/*.@(js|css)",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "max-age=604800"
-          }
-        ]
+        "headers": [{
+          "key": "Cache-Control",
+          "value": "max-age=604800"
+        }]
       },
       {
         "source": "**/*.@(html)",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "no-cache, no-store, must-revalidate, max-age=0"
-          }
-        ]
+        "headers": [{
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate, max-age=0"
+        }]
       },
       {
         "source": "index.html",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "no-cache, no-store, must-revalidate, max-age=0"
-          }
-        ]
+        "headers": [{
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate, max-age=0"
+        }]
       }
     ],
     "cleanUrls": true

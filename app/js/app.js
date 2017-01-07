@@ -165,6 +165,21 @@
                 controller: 'RojdestvoController',
                 controllerAs: CONTROLLER_AS_VIEW_MODEL
             })
+            .when('/decoupage/rocks/simeon', {
+                templateUrl: '../../views/partials/decoupage/rocksSimeon.html',
+                controller: 'SimeonController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/decoupage/rocks/impuls', {
+                templateUrl: '../../views/partials/decoupage/rocksImpuls.html',
+                controller: 'ImpulsController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/decoupage/rocks/lisici', {
+                templateUrl: '../../views/partials/decoupage/rocksLisici.html',
+                controller: 'LisiciController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
             .when('/weddings', {
                 templateUrl: '../views/partials/weddings/weddingsHome.html',
                 controller: 'WeddingsController',
@@ -285,6 +300,9 @@
             bottleDream: 'Бутилка "Коледна мечта"',
             rockRojdestro: 'Камък "Рождество Христово"',
             kamen: 'Камък "Лосът Камен"',
+            rockLisici: 'Камък "Лисиче семейство"',
+            rockImpuls: 'Камък "Импулсивно"',
+            rockSimeon: 'Камък "Симеон Велики"',
             champHeading: 'Сватбено шампанско',
             champMagic: 'Шампанско "Вълшебство"',
             champSilver: 'Шампанско "Сребърна перла"',
@@ -350,6 +368,9 @@
             $('#surikati-zoomContainer').remove();
             $('#dream-zoomContainer').remove();
             $('#rojdestvo-zoomContainer').remove();
+            $('#lisici-zoomContainer').remove();
+            $('#impuls-zoomContainer').remove();
+            $('#simeon-zoomContainer').remove();
         });
 
         // Activate bootstrap tooltips
