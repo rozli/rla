@@ -152,6 +152,16 @@
         "type": 301
       },
       {
+        "source": "/decoupage/paintings",
+        "destination": "/#/decoupage/paintings",
+        "type": 301
+      },
+      {
+        "source": "/decoupage/paintings/animals",
+        "destination": "/#/decoupage/paintings/animals",
+        "type": 301
+      },
+      {
         "source": "/weddings",
         "destination": "/#/weddings",
         "type": 301

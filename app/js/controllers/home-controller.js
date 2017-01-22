@@ -1,4 +1,4 @@
-(function() {
+(function () {
     'use strict';
 
     function HomeController($scope, $rootScope, $location, PageTitle) {
@@ -14,7 +14,7 @@
         $rootScope.texts.fbShareMedia = $rootScope.texts.url + '/images/s_xmas_bottles.jpg';
         $rootScope.texts.fbShareDesc = $rootScope.texts.fbStart + 'Украсете празничната си трапеза';
 
-        $rootScope.$on('$routeChangeSuccess', function() {
+        $rootScope.$on('$routeChangeSuccess', function () {
 
             var location = $location.path();
 
@@ -27,6 +27,7 @@
             $scope.inHandmade = location.indexOf('handmade') > 0;
             $scope.inRocks = location.indexOf('decoupage/rocks') > 0;
             $scope.inBottles = location.indexOf('decoupage/bottles') > 0;
+            $scope.inPaintings = location.indexOf('decoupage/paintings') > 0;
             $scope.inChamp = location.indexOf('weddings/champagne') > 0;
             $scope.inBaskets = location.indexOf('weddings/baskets') > 0;
             $scope.showFbShare =
@@ -39,4 +40,4 @@
 
     angular.module('rozLi.controllers')
         .controller('HomeController', ['$scope', '$rootScope', '$location', 'PageTitle', HomeController]);
-} ());
+}());
