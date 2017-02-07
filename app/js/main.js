@@ -176,7 +176,7 @@
     };
 
     var initializeZoom = function (elementId) {
-        if ($(document).width() > 992) {
+        if ($(document).width() > 975) {
             $('#' + elementId).ezPlus({
                 zoomType: 'inner',
                 scrollZoom: true,
@@ -186,8 +186,10 @@
     };
 
     var initializeGallery = function (elementId) {
+
+        var selector = '#' + elementId;
+
         if ($(document).width() > 975) {
-            var selector = '#' + elementId;
             $(selector).ezPlus({
                 zoomType: 'inner',
                 scrollZoom: true,
@@ -197,14 +199,23 @@
                 imageCrossfade: true,
                 loadingIcon: '/images/squares.gif'
             });
-
-            //pass the images to Fancybox
-            $(selector).bind('click', function (e) {
-                var ez = $(selector).data('ezPlus');
-                $.fancyboxPlus(ez.getGalleryList());
-                return false;
+        } else {
+            $(selector).ezPlus({
+                zoomType: 'none',
+                cursor: 'pointer',
+                gallery: 'gallery_01',
+                galleryActiveClass: 'active',
+                imageCrossfade: true,
+                loadingIcon: '/images/squares.gif'
             });
         }
+
+        //pass the images to Fancybox
+        $(selector).bind('click', function (e) {
+            var ez = $(selector).data('ezPlus');
+            $.fancyboxPlus(ez.getGalleryList());
+            return false;
+        });
     };
 
     rozLiJs = {
