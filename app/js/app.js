@@ -350,6 +350,13 @@
             initialize: true
         };
 
+        $rootScope.champagneSlider = {
+            imageUrl: '../../images/slide_2.jpg',
+            heading: $rootScope.texts.champHeading,
+            subheading: $sce.trustAsHtml($rootScope.texts.madeWithLove),
+            initialize: true
+        };
+
         // initialise google analytics
         $window.ga('create', 'UA-88641929-1', 'auto');
 

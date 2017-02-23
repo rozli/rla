@@ -1,11 +1,11 @@
 (function () {
     'use strict';
 
-    function MagicController($scope, $rootScope, $location, PageTitle) {
+    function MagicController($scope, $rootScope, $location, $sce, PageTitle) {
         var vm = this;
         PageTitle.setTitle('RozLi - ' + $rootScope.texts.champMagic);
 
-        rozLiJs.initialize();
+        $scope.sSlider = $rootScope.champagneSlider;
         rozLiJs.initializeGallery("magic");
 
         $scope.fbShareURL = $rootScope.texts.url + $location.path();
@@ -14,5 +14,5 @@
     }
 
     angular.module('rozLi.controllers')
-        .controller('MagicController', ['$scope', '$rootScope', '$location', 'PageTitle', MagicController]);
-} ());
+        .controller('MagicController', ['$scope', '$rootScope', '$location', '$sce', 'PageTitle', MagicController]);
+}());

@@ -1,11 +1,11 @@
 (function () {
     'use strict';
 
-    function SilverController($scope, $rootScope, $location, PageTitle) {
+    function SilverController($scope, $rootScope, $location, $sce, PageTitle) {
         var vm = this;
         PageTitle.setTitle('RozLi - ' + $rootScope.texts.champSilver);
 
-        rozLiJs.initialize();
+        $scope.sSlider = $rootScope.champagneSlider;
         rozLiJs.initializeGallery("silver");
 
         $scope.fbShareURL = $rootScope.texts.url + $location.path();
@@ -14,5 +14,5 @@
     }
 
     angular.module('rozLi.controllers')
-        .controller('SilverController', ['$scope', '$rootScope', '$location', 'PageTitle', SilverController]);
-} ());
+        .controller('SilverController', ['$scope', '$rootScope', '$location', '$sce', 'PageTitle', SilverController]);
+}());

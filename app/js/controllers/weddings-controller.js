@@ -1,11 +1,16 @@
-(function() {
+(function () {
     'use strict';
 
-    function WeddingsController($scope, $rootScope, $location, PageTitle) {
+    function WeddingsController($scope, $rootScope, $location, $sce, PageTitle) {
         var vm = this;
         PageTitle.setTitle('RozLi - Сватбени');
 
-        rozLiJs.initialize();
+        $scope.sSlider = {
+            imageUrl: '../../images/slide_2.jpg',
+            heading: $rootScope.texts.weddingsHeading,
+            subheading: $sce.trustAsHtml($rootScope.texts.madeWithLove),
+            initialize: true
+        };
 
         $rootScope.texts.fbShareURL = $rootScope.texts.url + $location.path();
         $rootScope.texts.fbShareMedia = $rootScope.texts.url + '/images/slide_2.jpg';
@@ -13,5 +18,5 @@
     }
 
     angular.module('rozLi.controllers')
-        .controller('WeddingsController', ['$scope', '$rootScope', '$location', 'PageTitle', WeddingsController]);
-} ());
+        .controller('WeddingsController', ['$scope', '$rootScope', '$location', '$sce', 'PageTitle', WeddingsController]);
+}());
