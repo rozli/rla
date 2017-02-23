@@ -6,8 +6,14 @@
     PageTitle.setTitle('RozLi - Сватбени кошници');
 
     $scope.sSlider = {
-      imageUrl: '../../images/slide_2.jpg',
+      imageUrl: '../../images/s_baskets_1.jpg',
       heading: 'Ръчно изработени кошници за Вашата сватба',
+      subheading: $sce.trustAsHtml($rootScope.texts.madeWithLove)
+    };
+
+    $scope.xSlider = {
+      imageUrl: '../../images/s_baskets_2.jpg',
+      heading: 'Ръчно изработени сватбени кошници',
       subheading: $sce.trustAsHtml($rootScope.texts.madeWithLove),
       initialize: true
     };
